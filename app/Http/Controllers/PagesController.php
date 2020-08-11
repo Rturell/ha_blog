@@ -20,7 +20,7 @@ class PagesController extends Controller
 
     public function contact(Request $request)
     {
-        Mail::to("hola@ha.edu.uy")->send(new Contact($request->name, $request->email, $request->message));
+        Mail::to("rodrigoturell@gmail.com")->send(new Contact($request->name, $request->email, $request->message));
         return redirect('/');
     }
 }
